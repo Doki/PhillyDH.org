@@ -1,0 +1,15 @@
+/*   
+Theme Name: PhillyDH
+Theme URI: http://phillydh.org
+Description: The theme for PhillyDH. Better. Faster. Stronger.
+Author: Interactive Mechanics
+Author URI: http://interactivemechanics.com
+Version: 1.0
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic);
+@import url('css/normalize.css');
+@import url('css/foundation.min.css');
+@import url('css/fontello.css');
+@import url('css/animation.css');
+@import url('css/app.css');
