@@ -24,7 +24,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p {
 			padding: 0;
 			margin: 0;
 			height: 100%;
-			background: #f2f0e8;
+			background: #fbfbfb;
 		}
 		
 .wrapper {
@@ -34,20 +34,21 @@ html, body, div, h1, h2, h3, h4, h5, h6, p {
 
 header {
 	background: #FFF;
-	height: 100px;
+	height: 89px;
 	}
 	header ul.inline-list {
 		margin-top: 10px;
+      margin-bottom:5px;
 		float: right;
 		}
 		header ul.inline-list a {
-			color: #bbbdc0;
+			color: #69696b;
 			font-weight: 700;
-			font-size: 12px;
+			font-size: .8em;
 			text-transform: uppercase;
 			}
 			header ul.inline-list a:hover {
-				color: #999;
+				color: #48307f;
 			}
 	
 
@@ -66,7 +67,7 @@ header {
 		border-radius: 9999px;
 		top: 40px;
 		position: relative;
-		opacity: .8;
+		opacity: .89;
 		-moz-transition: opacity 1s;
 		-webkit-transition: opacity 1s;
 		transition: opacity 1s;
@@ -79,7 +80,7 @@ header {
 			}
 		.title .title-circle .title-outline {
 			border: 1px solid white;
-			border: 1px solid rgba(255,255,255,.75);
+			border: 1px solid rgba(255,255,255,.8);
 			width: 310px;
 			height: 310px;
 			border-radius: 9999px;
@@ -114,7 +115,7 @@ header {
 	}
 	.content h2 p {
 		color: #231f20;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 36px;
 		line-height: 42px;
 		text-align: center;
@@ -124,9 +125,10 @@ header {
 		margin: 20px 0;
 		}
 		.content .article h2,
-		.content .article h2 a {
+		.content .article h2 a:link {
+         text-decoration:none;
 			color: #231f20;
-			font-weight: 300;
+			font-weight: 400;
 			font-size: 30px;
 			line-height: 36px;
 			text-align: center;
@@ -135,7 +137,7 @@ header {
 		.content .article p {
 			color: #231f20;
 			font-size: 16px;
-			font-weight: 300;
+			font-weight: 400;
 			line-height: 24px;
 		}
 		.content .article ul, 
@@ -143,7 +145,7 @@ header {
 			color: #231f20;
 			margin-left: 40px;
 			font-size: 16px;
-			font-weight: 300;
+			font-weight: 400;
 			line-height: 24px;
 		}
 		.content .article hr {
@@ -157,11 +159,19 @@ header {
 			font-size: 16px;
 			font-weight: 700;
 			line-height: 24px;
-			color: #4b3778;
-			}
-			.content .article a:hover {
-				text-decoration: underline;
-			}
+			color: #451878;
+         text-decoration: underline;
+			}      
+         .content .article a:visited {
+            color: #4b3778;
+         }
+         .content .article a:hover {
+            color: #5e20a3
+         }   
+         .content .article h2 a:hover {
+            text-decoration: underline;
+            color: #231f20
+         }
 	
 	.content .user {
 		text-align: center;
@@ -170,7 +180,7 @@ header {
 		.content .user h4 {
 			color: #58585b;
 			font-size: 18px;
-			font-weight: 300;
+			font-weight: 400;
 			margin-bottom: 0;
 			margin-top: 10px;
 		}
@@ -192,17 +202,26 @@ header {
 		}
 		
 
-.sidebar {}
+.sidebar {
+   padding-left: 1em;
+}
+.sidebar a {
+   text-decoration: none;
+}
 	.sidebar a.button.large {
 		background: #4b3778;
 		border: none;
+      margin-left: -1em;
 		padding: 18px 24px;
 		font-size: 21px;
 		font-weight: 300;
 	}
+   .sidebar a.button.large:hover {
+      text-decoration:underline;
+   }
 	.sidebar h3 {
 		color: #58585b;
-		font-size: 12px;
+		font-size: .95em;
 		text-transform: uppercase;
 		font-weight: 700;
 	}
@@ -210,12 +229,12 @@ header {
 		margin-left: 20px;
 		}
 		.sidebar ul li {
-			color: #AAA;
+			color: #58585b;
 			font-size: 12px;
 		}
 		.sidebar ul li a {
-			color: #58585b;
-			font-weight: 300;
+			color: #4b3778;
+			font-weight: 400;
 			font-size: 16px;
 			}
 			.sidebar ul li a:hover {
@@ -236,18 +255,18 @@ footer {
 		text-align: right;
 		}
 		footer .social-media .icon {
-			background: #d1d2d4;
+			background: #999;
 			width: 40px;
 			height: 40px;
 			border-radius: 40px;
 			display: inline-block;
 			margin-right: 8px;
-			-webkit-transition: all .5s;
-			-moz-transition: all .5s;
-			transition: all .5s;
+			-webkit-transition: all .4s;
+			-moz-transition: all .4s;
+			transition: all .4s;
 			padding: 10px 7px;
 			font-size: 20px;
-			color: #f1f1f2;
+			color: #ffffff;
 			}
 			footer .social-media .icon:hover {
 				color: white;
@@ -280,22 +299,28 @@ footer {
 				position: relative;
 				font-size: 14px;
 				line-height: 18px;
-				color: #AAA;
+				color: #000;
 				font-weight: 300;
 				}
 				footer .copyright .copyright-info a {
-					color: #666;
+					color: #4b3778;
+               font-weight: 400;
 					text-decoration: underline;
 				}
 
 
-@media only screen and (min-width: 58.75em) {
+@media only screen and (min-width: 59em) {
 	header .top-bar {
 		background: none;
 		margin-top: -5px;
 		}
+      .top-bar .name h1 {
+        font-size: 2.75em;
+        margin-top: 0.2em;
+      }
 		header .top-bar .name a {
 			background: url(../images/logo-active.jpg) no-repeat;
+         background-size: 89px 59px;
 			text-indent: -9999px;
 			width: 89px;
 			height: 59px;
@@ -310,24 +335,24 @@ footer {
 			}
 			header .top-bar-section li a:not(.button) {
 				font-size: 18px;
-				font-weight: 300;
-				color: #58585b;
+				font-weight: 400;
+				color: #4b3778;
 				height: 59px;
 				line-height: 63px;
 				padding: 0 15px;
 				}
 				header .top-bar-section li:hover a:not(.button) {
-					color: #AAA;
+					color: #000;
 					background: transparent;
-					border-bottom: 4px solid #CCC;
+					border-bottom: 4px solid #50358d;
 				}
 				header .top-bar-section li.current-menu-item a:not(.button) {
 					color: #4b3778;
-					border-bottom: 4px solid #4b3778;
+					border-bottom: 4px solid #50358d;
 				}
 }
 		
-@media only screen and (max-width: 58.75em) {
+@media only screen and (max-width: 59em) {
 	header .top-bar-section {
 		z-index: 999;
 	}
