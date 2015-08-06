@@ -3,12 +3,12 @@
 <?php if ( is_home() ) { ?>
 	<div class="title">
 		<div class="title-circle">
-			<div class="title-outline">
+			<a href="https://groups.google.com/forum/#!forum/phillydigitalhumanities"><div class="title-outline">
 				<div class="we-are">We are</div>
 				<div class="profession">developers</div>
 				<hr/>
-				<a href="https://groups.google.com/forum/#!forum/phillydigitalhumanities">Join PhillyDH today!</a>
-			</div>
+				<span class="underline">Join PhillyDH today!</span>
+			</div></a>
 		</div>
 	</div>
 <?php } ?>
@@ -23,6 +23,7 @@
 				<hr/>
 			</div>
 			<?php endwhile; endif; ?>
+			<div class="navigation"><?php previous_posts_link(); ?>    <span class="nav-right"><?php next_posts_link(); ?></span></div>
 		</div>
 		<div class="large-3 columns">
 			<?php get_sidebar(); ?>
